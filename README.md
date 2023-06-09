@@ -8,25 +8,15 @@ The application contains an index page, which lists all the datasets specified i
 
 You can read more about it on the [Data catalog with data on GitHub](https://portaljs.org/docs/examples/github-backed-catalog) blog post.
 
-## Demo
-
-https://example.portaljs.org/
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdatopian%2Fportaljs%2Ftree%2Fmain%2Fexamples%2Fgithub-backed-catalog)
-
-By clicking on this button, you will be redirected to a page which will allow you to clone the content into your own GitHub/GitLab/Bitbucket account and automatically deploy everything.
-
 ## How to use
 
-### Install
+### Clone the repo
 
-Execute `create-next-app` to bootstrap the example:
+Clone this repo to get access to the code
 
 ```
-npx create-next-app <app-name> --example https://github.com/datopian/portaljs/tree/main/examples/github-backed-catalog
-cd <app-name>
+git clone https://github.com/datopian/kanton-zug-github-backed-catalog 
+cd kanton-zug-github-backed-catalog
 ```
 
 ### Set environment variables
@@ -65,12 +55,15 @@ The `datasets.json` file is simply a list of datasets, below you can see a minim
 
 ```json
 {
-  "owner": "fivethirtyeight",
-  "repo": "data",
-  "branch": "master",
-  "files": ["nba-raptor/historical_RAPTOR_by_player.csv", "nba-raptor/historical_RAPTOR_by_team.csv"],
-  "readme": "nba-raptor/README.md"
-}
+  "owner": "datopian",
+  "branch": "main",
+  "repo": "kanton-zug-github-backed-catalog",
+  "files": [
+    "datasets/sample-dataset/data_1.csv",
+    "datasets/sample-dataset/data_2.csv"
+  ],
+  "readme": "datasets/sample-dataset/README.md"
+},
 ```
 
 It has:
@@ -99,3 +92,20 @@ And run the production build with:
 ```
 npm run start
 ```
+
+## How to add more datasets 
+
+### Developers
+
+If you want to add a dataset you can just edit the `datasets.json` file and point to the dataset you want to add, in this example we have a few examples of that, in two of those we are pointing to this exact repo, more specifically to datasets inside the `datasets` folder.
+
+Once you add those just commit your changes and they should appear automatically
+
+### Non developers
+
+This is a project that assumes some familiarity with github, if you are a non technical person you can still add a dataset, simply click on this icon right here in the repo page.
+![](https://hackmd.io/_uploads/rkLaAxgD2.png)
+And edit the `datasets.json` you can there point to the repo and path that you want to use
+
+If you don't have a repo to point to, you can always just upload your data to this same repo, to do so we suggest you follow this [video](https://youtu.be/pgzOiH1kmnI?t=142) showing how to push data to github using a drag and drop ui, once you do this, just edit the `datasets.json` as described before.
+
