@@ -20,7 +20,10 @@
     "branch": "main",
     "repo": "kanton-zug-github-backed-catalog",
     "name": "Sample dataset",
-    "files": ["datasets/sample-dataset/data_1.csv", "datasets/sample-dataset/data_2.csv"],
+    "files": [
+      "datasets/sample-dataset/data_1.csv",
+      "datasets/sample-dataset/data_2.csv"
+    ],
     "readme": "datasets/sample-dataset/README.md"
   },
   {
@@ -28,7 +31,9 @@
     "branch": "main",
     "repo": "kanton-zug-github-backed-catalog",
     "name": "Do Voters Want Democrats Or Republicans In Congress?",
-    "files": ["datasets/congress-generic-ballot/generic_topline_historical.csv"],
+    "files": [
+      "datasets/congress-generic-ballot/generic_topline_historical.csv"
+    ],
     "readme": "datasets/congress-generic-ballot/README.md"
   },
   {
@@ -37,12 +42,12 @@
     "branch": "main",
     "name": "GB Country Regional Analysis",
     "files": [
-    "data/cofog.csv",
-     "data/cofog_dejargonise.csv", 
-      "data/cra.csv", 
-       "data/departments.csv", 
-        "data/nuts_pop.csv", 
-         "data/pogs.csv", 
+      "data/cofog.csv",
+      "data/cofog_dejargonise.csv",
+      "data/cra.csv",
+      "data/departments.csv",
+      "data/nuts_pop.csv",
+      "data/pogs.csv"
     ],
     "readme": "README.md",
     "datapackage": "datapackage.json"
